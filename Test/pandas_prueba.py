@@ -26,3 +26,5 @@ print(df_colesterol.nombre)
 print(df_colesterol[["nombre","edad","colesterol"]])
 
 df_colesterol["colesterol"].plot() # graficar
+
+print("Fin")

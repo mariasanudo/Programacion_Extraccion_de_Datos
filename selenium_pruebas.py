@@ -67,7 +67,7 @@ for row in list_rows[1:]:
 
 #print(datos)
 df_olimpiadas= pd.DataFrame(datos)
-df_olimpiadas.to_csv("data_oilimpiadas.csv")
+df_olimpiadas.to_csv("datasets/data_oilimpiadas.csv")
 print(df_olimpiadas)
 # time.sleep(5) # deja abierta la ventana por el tiempo indicado
 navegador.close()

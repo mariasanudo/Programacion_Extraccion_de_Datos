@@ -31,7 +31,7 @@ if response.status_code == 200:
         print("\n")
 
     df_jobs = pd.DataFrame(data)
-    df_jobs.to_csv("Jobs.csv")
+    df_jobs.to_csv("datasets/Jobs.csv")
 
     #print(lista_divs[0]).prettify()
     #print(soup.head.title.text)

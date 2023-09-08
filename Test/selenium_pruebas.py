@@ -11,8 +11,7 @@ from bs4 import BeautifulSoup
 # Configuraciones
 s = Service(ChromeDriverManager().install())
 opc = Options()
-opc.add_argument(
-"--window-size = 1020, 1200") # los -- son obligatorios, indican una palabra extensa, se utiliza para determinar la terminal
+opc.add_argument("--window-size = 1020, 1200") # los -- son obligatorios, indican una palabra extensa, se utiliza para determinar la terminal
 
 navegador = webdriver.Chrome(service=s, options=opc)
 navegador.get("http://www.olympedia.org/statistics/medal/country")
@@ -29,13 +28,13 @@ yearGroups = cmbYear.find_elements(By.TAG_NAME, "optgroup")
 year_list = yearGroups[0].find_elements(By.TAG_NAME, "option")
 
 datos = {
-"country":[],
-"year":[],
-"gender":[],
-"gold":[],
-"silver":[],
-"bronze":[],
-"total":[],
+    "country":[],
+    "year":[],
+    "gender":[],
+    "gold":[],
+    "silver":[],
+    "bronze":[],
+    "total":[],
 }
 
 """

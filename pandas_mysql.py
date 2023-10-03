@@ -19,3 +19,17 @@ print(cadena_conexion)
 engine = create_engine(cadena_conexion)
 conexion = engine.connect()
 print(conexion)
+
+data_oli = pd.read_csv("datasets/data_olimpiadas.csv", index_col=0)
+print(data_oli.sample(5))
+
+gender = data_oli.gender.unique()
+print(gender)
+
+df_genders = pd.DataFrame(gender, columns=["nombre"])
+print(df_genders)
+#df_genders.to_sql("genero", conexion,if_exists= "append", index=False)
+
+query = "select nombre from genero"
+resultados = pd.read_sql(query, conexion)
+print(resultados)

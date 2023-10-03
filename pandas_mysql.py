@@ -19,4 +19,3 @@ print(cadena_conexion)
 engine = create_engine(cadena_conexion)
 conexion = engine.connect()
 print(conexion)
-

@@ -34,4 +34,4 @@ try:
     #print(cursor)
     """
 except Error as e:
-    print(e)
+    print(f"ERROR {e}")

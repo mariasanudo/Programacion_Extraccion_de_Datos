@@ -59,4 +59,18 @@ datos_ffill = datos.ffill() #llena de arriba hacia abajo
 #LLENAR DATOS NULOS MIX
 datos_mix = datos.bfill().fillna(0) #combinas métodos
 datos_mix = datos.bfill().ffill() #combinas métodos
-print(datos_mix)
+#print(datos_mix)
+
+#VERIFICAR DUPLICADOS
+duplicados = datos.duplicated()
+#print(duplicados)
+print(len(duplicados))
+
+duplicados = datos.duplicated(subset= ["sex","weight"]) #elimina los datos de las columnas que se repiten
+#print(duplicados)
+
+eliminar_duplicados = datos.drop_duplicates #elimina los datos duplicados
+
+eliminar_duplicados = datos.drop_duplicates(subset= ["sex","weight"]) #elimina los datos de las columnas que se repiten
+#print(len(eliminar_duplicados))
+

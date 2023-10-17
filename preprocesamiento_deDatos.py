@@ -1,6 +1,6 @@
 import pandas as pd
 
-datos = pd.read_csv("surveys.csv")
+datos = pd.read_csv("datasets/surveys.csv")
 #print(datos)
 
 nulos = datos.isnull() #identifica los valores nulos

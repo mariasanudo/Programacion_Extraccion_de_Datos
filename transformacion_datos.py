@@ -37,4 +37,6 @@ concatenar = pd.concat([df_alumno, df_alumnos2],
 
 concatenar2 = pd.concat([df_alumno, df_alumnos2],
                        axis="columns")
-print(concatenar2)
+#print(concatenar2)
+
+print(concatenar.promedio.mean())

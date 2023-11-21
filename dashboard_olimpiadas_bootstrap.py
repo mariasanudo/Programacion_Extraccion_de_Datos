@@ -20,7 +20,7 @@ def tarjeta_filtros():
         ]),
         html.Div([
             dbc.Label("Year: "),
-            dcc.Input(type= "number", min= 1946, max= 2023)
+            dcc.Input(type= "number", min= 1940, max= 2023)
         ])
     ])
     return control

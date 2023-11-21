@@ -55,4 +55,3 @@ if __name__ == "__main__":
     app = Dash(__name__, external_stylesheets= [dbc.themes.CYBORG])
     app.layout = dashboard()
     app.run(debug= True)
-
